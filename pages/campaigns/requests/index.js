@@ -64,7 +64,7 @@ class RequestIndex extends Component {
           </Header>
           <Body>{this.renderRows()}</Body>
         </Table>
-        <div>Found {this.props.requestCount} requests.</div>
+        <div>Found {this.props.requestCount} request{this.props.requestCount > 1 ? 's' : ''}.</div>
       </Layout>
     );
   }

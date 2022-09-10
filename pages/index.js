@@ -22,7 +22,7 @@ class CampaignIndex extends Component {
         fluid: true,
       };
     });
-    return <Card.Group items={items} />;
+    return this.props.campaigns.length > 0 ? (<Card.Group items={items} />) : <h4>No campaign created yet.</h4>;
   }
   render() {
     return (
