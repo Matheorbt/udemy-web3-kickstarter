@@ -3,9 +3,10 @@ const Web3 = require("web3");
 const compiledFactory = require("./build/CampaignFactory.json");
 
 const provider = new HDWalletProvider(
-  'use sudden palace nation absorb basket vast cradle dial attack swear brick',
-  'https://goerli.infura.io/v3/96f40b998b5e458ca50657d61d1a3f42'
+    processs.env.MNEMONIC,
+    processs.env.INFURA_URL,
 );
+
 const web3 = new Web3(provider);
 
 const deploy = async () => {
